@@ -5,6 +5,13 @@ import torch
 from functools import lru_cache
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModelForSeq2SeqLM
 
+import streamlit as st
+import os
+
+# Load Hugging Face token from Streamlit secrets
+HF_TOKEN = st.secrets["HF_TOKEN"]
+os.environ["HF_TOKEN"] = HF_TOKEN
+
 # Primary model requested (Gemma by default)
 PRIMARY_MODEL = os.getenv("SUMMARIZER_MODEL", "google/gemma-2b-it")
 # Fallback that runs almost anywhere
