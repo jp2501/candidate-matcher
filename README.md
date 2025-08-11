@@ -58,3 +58,4 @@ Hugging Face model (google/gemma-2b-it) is available and accessible with the giv
 **Known Issues**
 On first load, st.session_state.settings is initialized in app.py to avoid missing key errors.
 The AI summary feature requires a valid Hugging Face token.
+
