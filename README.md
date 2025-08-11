@@ -35,12 +35,15 @@ Note: Do not hardcode tokens in the codebase.
 # Clone the repo
 git clone https://github.com/jp2501/candidate-matcher.git
 cd candidate-matcher
+
 # Create virtual environment
 python -m venv venv
 source venv/bin/activate   # macOS/Linux
 venv\Scripts\activate      # Windows
+
 # Install dependencies
 pip install -r requirements.txt
+
 # Run the app
 streamlit run app.py
 
@@ -58,4 +61,5 @@ Hugging Face model (google/gemma-2b-it) is available and accessible with the giv
 **Known Issues**
 On first load, st.session_state.settings is initialized in app.py to avoid missing key errors.
 The AI summary feature requires a valid Hugging Face token.
+
 
