@@ -1,12 +1,23 @@
-# Python
+# .gitignore
 __pycache__/
 *.py[cod]
 *.egg-info/
 *.log
-
-# Virtual environment
 venv/
 .env/
-
-# Streamlit cache
 .streamlit/
+.cache/
+**/node_modules/
+**/*.safetensors
+**/*.bin
+**/*.pt
+key.txt.txt
+.env
+.streamlit/
+venv/
+__pycache__/
+*.py[cod]
+*.log
+*.safetensors
+*.bin
+*.pt
